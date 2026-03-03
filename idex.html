@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Estudio - Examen Trimestral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #2980b9;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            vertical-align: top;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e8f4f8;
+        }
+        .tema-principal {
+            background-color: #e74c3c;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .subtema {
+            background-color: #f39c12;
+            color: white;
+            font-weight: bold;
+        }
+        .formula {
+            background-color: #d4e6f1;
+            font-family: 'Courier New', monospace;
+        }
+        .ejemplo {
+            background-color: #d5f5e3;
+        }
+        .consejos {
+            background-color: #f9e79f;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .nota {
+            background-color: #d5dbdb;
+            padding: 10px;
+            border-left: 5px solid #e74c3c;
+            margin-top: 20px;
+        }
+        @media print {
+            body {
+                margin: 0.5cm;
+            }
+            .consejos, .nota {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 TABLA DE ESTUDIO - EXAMEN TRIMESTRAL 📚</h1>
+   
+    <!-- TABLA PRINCIPAL -->
+    <table>
+        <tr>
+            <th width="10%">TEMA</th>
+            <th width="15%">SUBTEMA</th>
+            <th width="30%">DEFINICIÓN / FÓRMULA</th>
+            <th width="45%">EJEMPLO RESUELTO Y EXPLICADO</th>
+        </tr>
+       
+        <!-- TEMA 1: SUCESIONES -->
+        <tr>
+            <td rowspan="3" style="background-color: #e74c3c; color: white; font-weight: bold; text-align: center;">1. SUCESIONES CUADRÁTICAS</td>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Identificar tipo</td>
+            <td><strong>Sucesión simple:</strong> diferencia constante<br><strong>Sucesión cuadrática:</strong> segunda diferencia constante</td>
+            <td><strong>Ejemplo:</strong> 3, 8, 15, 24, 35...<br>• 1ras diferencias: +5, +7, +9, +11 (NO ctes)<br>• 2das diferencias: +2, +2, +2 (SÍ ctes)<br><strong>✓ Es CUADRÁTICA</strong></td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Fórmula general</td>
+            <td><strong>an² + bn + c</strong><br>• 2a = 2da diferencia<br>• 3a+b = 1ra diferencia inicial<br>• a+b+c = 1er término</td>
+            <td><strong>Para 3,8,15,24,35:</strong><br>• 2a = 2 → a=1<br>• 3(1)+b=5 → b=2<br>• 1+2+c=3 → c=0<br><strong>Fórmula: n² + 2n</strong></td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Calcular términos</td>
+            <td>Sustituir n en la fórmula</td>
+            <td><strong>n² + 2n</strong><br>• T₁ = 1²+2(1)=3 ✓<br>• T₅ = 5²+2(5)=25+10=35 ✓<br>• T₁₀ = 10²+2(10)=100+20=120</td>
+        </tr>
+       
+        <!-- TEMA 2: EXPONENTES -->
+        <tr>
+            <td rowspan="3" style="background-color: #e74c3c; color: white; font-weight: bold; text-align: center;">2. PROPIEDADES DE EXPONENTES</td>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Multiplicación</td>
+            <td><strong>aᵐ · aⁿ = aᵐ⁺ⁿ</strong></td>
+            <td><strong>x⁵ · x³ = x⁵⁺³ = x⁸</strong><br>Explicación: Misma base (x), sumamos exponentes 5+3=8</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">División</td>
+            <td><strong>aᵐ / aⁿ = aᵐ⁻ⁿ</strong></td>
+            <td><strong>y⁷ / y² = y⁷⁻² = y⁵</strong><br>Explicación: Restamos exponentes 7-2=5</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Potencia de potencia</td>
+            <td><strong>(aᵐ)ⁿ = aᵐ·ⁿ</strong></td>
+            <td><strong>(z⁴)³ = z⁴ˣ³ = z¹²</strong><br>Explicación: Multiplicamos exponentes 4×3=12</td>
+        </tr>
+       
+        <!-- TEMA 2: DESIGUALDADES -->
+        <tr>
+            <td rowspan="2" style="background-color: #e74c3c; color: white; font-weight: bold; text-align: center;">2. DESIGUALDADES</td>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Despejes y cambios de signo</td>
+            <td><strong>⚠️ REGLA CLAVE:</strong> Al multiplicar/dividir por NEGATIVO, el signo se INVIERTE</td>
+            <td><strong>-3x < 12</strong><br>Dividir entre -3: (-3x)/-3 < 12/-3 → ¡CAMBIA! → <strong>x > -4</strong></td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Problemas</td>
+            <td>Traducir enunciado a desigualdad</td>
+            <td><strong>"Gastar menos de $200 con $25 c/u y $45 extra"</strong><br>25x + 45 < 200<br>25x < 155<br>x < 6.2 → <strong>x ≤ 6 bolsas</strong></td>
+        </tr>
+       
+        <!-- TEMA 3: POLÍGONOS -->
+        <tr>
+            <td rowspan="2" style="background-color: #e74c3c; color: white; font-weight: bold; text-align: center;">3. POLÍGONOS</td>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Suma de ángulos internos</td>
+            <td><strong>(n - 2) × 180°</strong><br>n = número de lados</td>
+            <td><strong>Hexágono (n=6):</strong><br>(6-2)×180° = 4×180° = <strong>720°</strong></td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Número de diagonales</td>
+            <td><strong>D = n(n - 3)/2</strong></td>
+            <td><strong>Octágono (n=8):</strong><br>8(8-3)/2 = 8×5/2 = 40/2 = <strong>20 diagonales</strong></td>
+        </tr>
+       
+        <!-- TEMA 4: FIGURAS A ESCALA -->
+        <tr>
+            <td rowspan="2" style="background-color: #e74c3c; color: white; font-weight: bold; text-align: center;">4. FIGURAS A ESCALA</td>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Aumento</td>
+            <td>Multiplicar medidas por factor > 1</td>
+            <td><strong>Rectángulo 3×5 cm, escala 4:</strong><br>3×4=12 cm, 5×4=20 cm → <strong>12×20 cm</strong></td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Disminución</td>
+            <td>Multiplicar medidas por factor 0 < k < 1</td>
+            <td><strong>Rectángulo 3×5 cm, escala 0.5:</strong><br>3×0.5=1.5 cm, 5×0.5=2.5 cm → <strong>1.5×2.5 cm</strong></td>
+        </tr>
+       
+        <!-- TEMA 5: CONCEPTOS TEÓRICOS -->
+        <tr>
+            <td rowspan="2" style="background-color: #e74c3c; color: white; font-weight: bold; text-align: center;">5. CONCEPTOS TEÓRICOS</td>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Igualdad (=)</td>
+            <td>Dos expresiones tienen exactamente el MISMO valor</td>
+            <td><strong>3x + 2 = 11</strong><br>Solo es cierto cuando x=3: 3(3)+2=9+2=11 ✓</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Desigualdad (>,<,≥,≤)</td>
+            <td>Las expresiones tienen diferente valor y hay un orden</td>
+            <td><strong>3x + 2 > 11</strong><br>Es cierto para x>3: x=4 → 14>11 ✓; x=3.5 → 12.5>11 ✓</td>
+        </tr>
+       
+        <!-- TEMA 6-7: ELEMENTOS GEOMÉTRICOS -->
+        <tr>
+            <td rowspan="8" style="background-color: #e74c3c; color: white; font-weight: bold; text-align: center;">6-7. ELEMENTOS GEOMÉTRICOS</td>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Línea recta</td>
+            <td>Sucesión infinita de puntos en la misma dirección</td>
+            <td><code>←───────────→</code> (no tiene principio ni fin)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Segmento de recta</td>
+            <td>Porción de recta con inicio y fin</td>
+            <td><code>A─────────B</code> (puntos extremos A y B)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Semirrecta</td>
+            <td>Tiene inicio pero no fin</td>
+            <td><code>A─────────→</code> (empieza en A y continúa)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Líneas paralelas</td>
+            <td>Nunca se cruzan, misma distancia</td>
+            <td><code>═════════<br>═════════</code> (siempre separadas igual)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Líneas secantes</td>
+            <td>Se cruzan en un punto</td>
+            <td><code>\  /<br> \/<br> /\<br>/  \</code> (se intersectan)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Líneas perpendiculares</td>
+            <td>Se cruzan formando 90°</td>
+            <td><code>  │<br>──┼──<br>  │</code> (ángulo recto)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Línea curva</td>
+            <td>Cambia de dirección gradualmente</td>
+            <td><code>~~~~~~~</code> (ondulada, no recta)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #f39c12; color: white; font-weight: bold;">Lenguaje algebraico</td>
+            <td>Traducir palabras a matemáticas</td>
+            <td>"Número + 7" → x+7<br>"Triple - 4" → 3x-4<br>"Mitad + 10" → x/2+10</td>
+        </tr>
+    </table>
+
+    <!-- CONSEJOS PARA EL EXAMEN -->
+    <div class="consejos">
+        <h2>🎯 CONSEJOS CLAVE PARA EL EXAMEN</h2>
+        <ul>
+            <li><strong>Sucesiones:</strong> Siempre calcula las diferencias primero</li>
+            <li><strong>Exponentes:</strong> Solo sumas/restas exponentes si la base es IGUAL</li>
+            <li><strong>Desigualdades:</strong> ¡Cuidado con negativos! Invierten el signo</li>
+            <li><strong>Polígonos:</strong> Memoriza (n-2)×180° y n(n-3)/2</li>
+            <li><strong>Escalas:</strong> Todas las medidas se multiplican por el MISMO factor</li>
+            <li><strong>Geometría:</strong> Practica dibujar cada tipo de línea</li>
+        </ul>
+    </div>
+
+    <!-- NOTA IMPORTANTE -->
+    <div class="nota">
+        <p><strong>📝 NOTA:</strong> Esta tabla contiene TODOS los temas del examen. Repasa cada ejemplo y practica con ejercicios similares. ¡Mucho éxito!</p>
+    </div>
+</body>
+</html>
